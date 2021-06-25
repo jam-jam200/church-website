@@ -18,24 +18,31 @@ app.get("/contact", (req, res, next) => {
 });
 
 app.post("/contact", (req, res, next) => {
-  console.log(req.body);
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "jessieoyaks4j@gmail.com",
-      pass: "2852003.",
+      user: "oyakhilomejessica@gmail.com",
+      pass: "oyakhilomejessica2003",
     },
   });
 
   const mailOptions = {
     from: req.body.email,
-    to: "jessieoyaks4j@gmail.com",
+    to: "oyakhilomejessica@gmail.com",
     subject: `Message from ${req.body.email}: ${req.body.subject}`,
     text: req.body.message,
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {});
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      res.send("error")
+    } else {
+      console.log("Email sent: " + info.response);
+      res.send("success");
+    }
+  });
 });
 
 app.set("view engine", "ejs");

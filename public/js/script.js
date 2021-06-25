@@ -15,10 +15,10 @@ contactForm.addEventListener("submit", (e) => {
   };
 
 
-  let xhr = new XMLHttpRequest(); 
+  let xhr = new XMLHttpRequest();
   xhr.open("POST", "/contact");
   xhr.setRequestHeader("content-type", "application/json");
-  xhr.onload = function(){
+  xhr.onload = function () {
     console.log(xhr.responseText);
     if (xhr.responseText == "success") {
       alert("email sent");
@@ -32,5 +32,4 @@ contactForm.addEventListener("submit", (e) => {
   };
 
   xhr.send(JSON.stringify(formData));
-
 });

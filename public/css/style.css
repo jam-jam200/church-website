@@ -12437,7 +12437,7 @@ textarea.form-control {
   font-weight: 700;
 }
 .staff .text span {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
 }
 .staff:hover .text {
   width: 90%;

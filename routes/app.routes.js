@@ -2,52 +2,24 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-  res.render("index.ejs", {
-    title: "Home",
-  });
-});
+const appController = require("../controller/appController");
 
-router.get("/about", (req, res, next) => {
-  res.render("about.ejs", {
-    title: "About us",
-  });
-});
+router.get("/", appController.index);
 
-router.get("/ministries", (req, res, next) => {
-  res.render("ministries.ejs", {
-    title: "Ministries",
-  });
-});
+router.get("/about", appController.about);
 
-router.get("/sermons", (req, res, next) => {
-  res.render("sermons.ejs", {
-    title: "Sermons",
-  });
-});
+router.get("/ministries", appController.ministries);
 
-router.get("/daily_devotion", (req, res, next) => {
-  res.render("daily_devotion.ejs", {
-    title: "Daily Devotion",
-  });
-});
+router.get("/sermons", appController.sermons);
 
-router.get("/events", (req, res, next) => {
-  res.render("events.ejs", {
-    title: "Events",
-  });
-});
+router.get("/daily_devotion", appController.devotion);
 
-router.get("/donation", (req, res, next) => {
-  res.render("donate.ejs", {
-    title: "Donation",
-  });
-});
+router.get("/events", appController.events);
 
-router.get("/contact", (req, res, next) => {
-  res.render("contact.ejs", {
-    title: "Contact us",
-  });
-});
+router.get("/donation", appController.donation);
+
+router.get("/contact", appController.contact);
+
+router.post("/contact", appController.postContact);
 
 module.exports = router;
