@@ -2,48 +2,23 @@ const express = require("express");
 const path = require("path");
 const churchRoute = require("./routes/app.routes");
 const nodemailer = require("nodemailer");
+const bodyParser = require("body-parser");
+
+
 
 const app = express();
 
+// app.configure()
+//middleware
+app.use(express.json());                                                                    
+// app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
 const port = 8000;
 
-//middleware
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 app.use("/", churchRoute);
 app.use("/", express.static(path.join(__dirname, "/public")));
 
-app.get("/contact", (req, res, next) => {
-  res.sendFile(__dirname + "./views/contact.ejs");
-});
 
-app.post("/contact", (req, res, next) => {
-
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: "oyakhilomejessica@gmail.com",
-      pass: "oyakhilomejessica2003",
-    },
-  });
-
-  const mailOptions = {
-    from: req.body.email,
-    to: "oyakhilomejessica@gmail.com",
-    subject: `Message from ${req.body.email}: ${req.body.subject}`,
-    text: req.body.message,
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-      res.send("error")
-    } else {
-      console.log("Email sent: " + info.response);
-      res.send("success");
-    }
-  });
-});
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));

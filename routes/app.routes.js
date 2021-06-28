@@ -18,8 +18,12 @@ router.get("/events", appController.events);
 
 router.get("/donation", appController.donation);
 
+router.get("/dashboard", appController.dashboard);
+
 router.get("/contact", appController.contact);
 
 router.post("/contact", appController.postContact);
+
+// router.get("/virginaKingsley/admin/fruitfulife", appController.admin);
 
 module.exports = router;
