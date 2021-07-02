@@ -1,8 +1,10 @@
 const express = require("express");
+const argon = require("argon2");
 
 const router = express.Router();
 
 const appController = require("../controller/appController");
+const Admin = require("../model/admin");
 
 router.get("/", appController.index);
 
@@ -24,6 +26,20 @@ router.get("/contact", appController.contact);
 
 router.post("/contact", appController.postContact);
 
-// router.get("/virginaKingsley/admin/fruitfulife", appController.admin);
+router.post("/admin/new", async (req, res, next) => {
+  try {
+    console.log(req.body);
+    let hashedPassword = await argon.hash(req.body.password);
+    let admin = await Admin.create({
+      name: req.body.name,
+      password: hashedPassword,
+      role: req.body.role,
+      email: req.body.email,
+    });
+    res.send(admin);
+  } catch (error) {
+    next(error);
+  }
+});
 
 module.exports = router;
