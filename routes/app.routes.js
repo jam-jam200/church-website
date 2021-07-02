@@ -16,11 +16,11 @@ router.get("/sermons", appController.sermons);
 
 router.get("/daily_devotion", appController.devotion);
 
+// router.get("/single_devotion/:id", appController.singleDevotion);
+
 router.get("/events", appController.events);
 
 router.get("/donation", appController.donation);
-
-router.get("/dashboard", appController.dashboard);
 
 router.get("/contact", appController.contact);
 

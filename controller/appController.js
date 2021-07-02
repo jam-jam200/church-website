@@ -28,9 +28,13 @@ exports.sermons = (req, res, next) => {
   });
 };
 
-exports.dashboard = (req, res, next) => {
-  res.render("./Admin/dashboard.js", {
-    title: "dashboard",
+exports.singleDevotion = async (req, res, next) => {
+  console.log(req.params.id);
+  const devotion = await Devotion.findById(req.params.id);
+  res.render("singleDevotion.ejs", {
+    title: "Daily Devotion",
+    server_url: req.server_url,
+    devotion,
   });
 };
 

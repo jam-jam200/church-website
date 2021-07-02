@@ -26,28 +26,65 @@
         </div>
       </div>
     </section>
-    <div class="row">
-       <% devotion.map((element)=>{ %>
-      <div class="col-md-4 col-lg-4 "></div>
-      <div class="card" style="width: 30rem">
-        <img src="/asset/children.jpg" class="card-img-top" alt="fruits of life" />
-        <div class="card-body">
-          <h1 class="card-title text-uppercase">Topic: <%=element.title%></h1><br>
-          <h5 class="card-subtitle mb-2 text-muted">FRUITS OF LIFE DAILY DEVOTION BY PASTOR KINGSLEY OYAKHILOME</h6><br>
-          <h5 class="card-subtitle mb-2 text-black"><%=element.date%></h5><br>
-          <h5 class="card-subtitle mb-2 text-m uted">Scripture: <%=element.scripture%></h5><br>
-          <h6 class="card-text">
-            <p><%=element.sermon%></p>
-          </h6><br>
-          <h5 class="card-subtitle mb-2 text-black">Thought for the day: <%=element.thoughtForTheDay%></h5><br>
-          <h5 class="card-subtitle mb-2 text-black">Prayer: <%=element.prayer%></h5><br>
-          <h5 class="card-subtitle mb-2 text-black">Confession: <%=element.confession%></h5><br>
-          <h5 class="card-subtitle mb-2 text-black">Prophet's Blessing: <%=element.prophet_blessing%></h5><br>
-          <h5 class="card-subtitle mb-2 text-black">Daily Bible Reading: <%=element.dailyBibleReading%></h5><br>
+
+    <section>
+      <div
+        class="row justify-content-center pb-5 mb-3"
+        style="padding-top: 150px"
+      >
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <span class="subheading">Devotions</span>
+          <h2>daily devotions</h2>
         </div>
       </div>
-      <% }) %>
-      <%- include("./includes/footer.ejs") %> <%- include("./includes/script.ejs") %>
+      <div class="row container mb-5">
+        <% devotion.map((element)=>{ %>
+        <div class="col-md-6 col-lg-6 mt-5">
+          <img
+            src="/asset/children.jpg"
+            class="img-fluid"
+            alt="fruits of life"
+          />
+        </div>
 
+        <div class="col-md-6 col-lg-6 mt-5" style="background-color: #f4f4f4">
+          <h1 class="text-uppercase" style="font-weight: 600; color: #b00">
+            Topic: <%=element.title%>
+          </h1>
+          <h6 class="mb-2 text-muted">
+            FRUITS OF LIFE DAILY DEVOTION BY PASTOR KINGSLEY OYAKHILOME
+          </h6>
+          <h5 class="mb-2 text-black"><%=element.date%></h5>
+          <h5 class="mb-2 text-m uted">Scripture: <%=element.scripture%></h5>
+          <div class="">
+            <p><%=element.sermon%></p>
+          </div>
+          <h1>
+            <p class="mt-4 btn-customize">
+              <a
+                href="/single_devotion/<%= element._id %>"
+                class="btn btn-primary btn-outline-primary px-4 py-3 ml-lg-2"
+                ><span></span> read more</a
+              >
+            </p>
+          </h1>
+          <!-- <h5 class="mb-2 text-black">
+            Thought for the day: <%=element.thoughtForTheDay%>
+          </h5>
+          <h5 class="mb-2 text-black">Prayer: <%=element.prayer%></h5>
+          <h5 class="mb-2 text-black">Confession: <%=element.confession%></h5>
+          <h5 class="mb-2 text-black">
+            Prophet's Blessing: <%=element.prophet_blessing%>
+          </h5>
+          <h5 class="mb-2 text-black">
+            Daily Bible Reading: <%=element.dailyBibleReading%>
+          </h5> -->
+        </div>
+        <% }) %>
+      </div>
+    </section>
+
+    <%- include("./includes/footer.ejs") %> <%- include("./includes/script.ejs")
+    %>
   </body>
 </html>
