@@ -33,7 +33,6 @@ exports.singleDevotion = async (req, res, next) => {
   const devotion = await Devotion.findById(req.params.id);
   res.render("singleDevotion.ejs", {
     title: "Daily Devotion",
-    server_url: req.server_url,
     devotion,
   });
 };

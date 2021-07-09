@@ -16,7 +16,7 @@ router.get("/sermons", appController.sermons);
 
 router.get("/daily_devotion", appController.devotion);
 
-// router.get("/single_devotion/:id", appController.singleDevotion);
+router.get("/single_devotion/:id", appController.singleDevotion);
 
 router.get("/events", appController.events);
 
