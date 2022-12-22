@@ -2910,6 +2910,18 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.contact-btn {
+  background-color: #fff !important;
+  color: #2a49af !important;
+  border-color: #fff;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #007bff;
