@@ -7,25 +7,7 @@
   <body>
     <%- include("./includes/socialMedia.ejs") %> <%-
     include("./includes/navigation.ejs") %>
-    <section
-      class="hero-wrap hero-wrap-2 js-fullheight"
-      style="background-image: url(/asset/pla.jpg)"
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-end">
-          <div class="col-md-9 ftco-animate pb-5">
-            <p class="breadcrumbs mb-2">
-              <span class="mr-2"
-                ><a href="/">Home <i class="fa fa-chevron-right"></i></a
-              ></span>
-              <span>Sermons <i class="fa fa-chevron-right"></i></span>
-            </p>
-            <h1 class="mb-0 bread">Sermons</h1>
-          </div>
-        </div>
-      </div>
-    </section>
+    <%-include("./includes/breadcrumbs.ejs") %>
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
@@ -36,13 +18,7 @@
         </div>
         <div class="row no-gutters d-flex sermon-wrap ftco-animate bg-light">
           <div
-            class="
-              col-md-6
-              d-flex
-              align-items-stretch
-              js-fullheight
-              ftco-animate
-            "
+            class="col-md-6 d-flex align-items-stretch js-fullheight ftco-animate"
           >
             <a
               href="/sermons"
@@ -94,14 +70,7 @@
         </div>
         <div class="row no-gutters d-flex sermon-wrap ftco-animate bg-light">
           <div
-            class="
-              col-md-6
-              d-flex
-              align-items-stretch
-              js-fullheight
-              ftco-animate
-              order-md-last
-            "
+            class="col-md-6 d-flex align-items-stretch js-fullheight ftco-animate order-md-last"
           >
             <a
               href="#"
@@ -153,13 +122,7 @@
         </div>
         <div class="row no-gutters d-flex sermon-wrap ftco-animate bg-light">
           <div
-            class="
-              col-md-6
-              d-flex
-              align-items-stretch
-              js-fullheight
-              ftco-animate
-            "
+            class="col-md-6 d-flex align-items-stretch js-fullheight ftco-animate"
           >
             <a
               href="#"

@@ -11024,6 +11024,15 @@ h5,
   }
 }
 
+@media (max-width: 768px) {
+  .breadcrumbs-height {
+    height: 50vh !important;
+  }
+  .hero-wrap {
+    height: 50vh !important;
+  }
+}
+
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;

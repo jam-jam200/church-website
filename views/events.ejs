@@ -7,26 +7,8 @@
   <body>
     <%- include("./includes/socialMedia.ejs") %> <%-
     include("./includes/navigation.ejs") %>
-    <section
-      class="hero-wrap hero-wrap-2 js-fullheight"
-      style="background-image: url(/asset/pla.jpg)"
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-end js-fullheight">
-          <div class="col-md-9 ftco-animate pb-5">
-            <p class="breadcrumbs mb-2">
-              <span class="mr-2"
-                ><a href="/">Home <i class="fa fa-chevron-right"></i></a
-              ></span>
-              <span>Events <i class="fa fa-chevron-right"></i></span>
-            </p>
-            <h1 class="mb-0 bread">Events</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-   <section class="ftco-section ftco-no-pt">
+    <%-include("./includes/breadcrumbs.ejs") %>
+    <section class="ftco-section ftco-no-pt">
       <div class="container">
         <div
           class="row justify-content-center pb-5 mb-3"
@@ -38,22 +20,27 @@
           </div>
         </div>
         <div class="row">
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
             <div
               class="img"
               style="background-image: url(/asset/pray.jpg)"
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">first sunday of the month</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  first sunday of the month
+                </h1>
                 <h2 class="text-capitalize mb-4">
                   <a href="/events">Healing and miracle sevice</a>
                 </h2>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i> Combined Service, 9:00
-                      Am
+                      ><i class="fa fa-calendar mr-2"></i> Combined Service,
+                      9:00 Am
                     </span>
                     <span
                       ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
@@ -68,24 +55,29 @@
               </div>
             </div>
           </div>
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
             <div
               class="img"
               style="background-image: url(/asset/pray.jpg)"
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">second sunday of the month</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  second sunday of the month
+                </h1>
                 <h2 class="mb-4 text-capitalize">
                   <a href="/events">Holy Ghost Service</a>
                 </h2>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00
-                      Am and 9:30 Am
+                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00 Am and
+                      9:30 Am
                     </span>
-                   
+
                     <span
                       ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
                       <a href="/">Jesus power and victory ministry</a></span
@@ -106,17 +98,22 @@
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">third sunday of the month</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  third sunday of the month
+                </h1>
                 <h2 class="mb-4 text-capitalize">
                   <a href="/events">blessing and anointing Service</a>
                 </h2>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00
-                      Am and 9:30 Am
+                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00 Am and
+                      9:30 Am
                     </span>
-                   
+
                     <span
                       ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
                       <a href="/">Jesus power and victory ministry</a></span
@@ -137,17 +134,22 @@
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">forth sunday of the month</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  forth sunday of the month
+                </h1>
                 <h2 class="mb-4 text-capitalize">
                   <a href="/events">victory celebration Service</a>
                 </h2>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00
-                      Am and 9:30 Am
+                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00 Am and
+                      9:30 Am
                     </span>
-                   
+
                     <span
                       ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
                       <a href="/">Jesus power and victory ministry</a></span
@@ -168,17 +170,22 @@
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">last sunday of the month</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  last sunday of the month
+                </h1>
                 <h2 class="mb-4 text-capitalize">
                   <a href="/events">thanksgiving and testimony Service</a>
                 </h2>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00
-                      Am and 9:30 Am
+                      ><i class="fa fa-calendar mr-2"></i> Services, 7:00 Am and
+                      9:30 Am
                     </span>
-                   
+
                     <span
                       ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
                       <a href="/">Jesus power and victory ministry</a></span
@@ -192,13 +199,10 @@
               </div>
             </div>
           </div>
-         
-       
-         
         </div>
       </div>
     </section>
-   <section class="ftco-section ftco-no-pt">
+    <section class="ftco-section ftco-no-pt">
       <div class="container">
         <div
           class="row justify-content-center pb-5 mb-3"
@@ -210,18 +214,24 @@
           </div>
         </div>
         <div class="row">
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
             <div
               class="img"
               style="background-image: url(/asset/pray.jpg)"
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">feast of Jesus</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  feast of Jesus
+                </h1>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i> 27th - 31st October 2021
+                      ><i class="fa fa-calendar mr-2"></i> 27th - 31st October
+                      2021
                     </span>
                     <span
                       ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
@@ -236,18 +246,24 @@
               </div>
             </div>
           </div>
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
             <div
               class="img"
               style="background-image: url(/asset/pray.jpg)"
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">annual thanksgiving service</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  annual thanksgiving service
+                </h1>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i>Sunday, 5th December 2021
+                      ><i class="fa fa-calendar mr-2"></i>Sunday, 5th December
+                      2021
                     </span>
                     <span
                       ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
@@ -262,117 +278,139 @@
               </div>
             </div>
           </div>
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
             <div
               class="img"
               style="background-image: url(/asset/pray.jpg)"
             ></div>
             <div class="text p-4 px-md-5 d-flex align-items-center">
               <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">christmas carol service</h1>
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  christmas carol service
+                </h1>
                 <div class="meta">
                   <p>
                     <span
-                      ><i class="fa fa-calendar mr-2"></i> Wednesday, 22nd  December 2021
+                      ><i class="fa fa-calendar mr-2"></i> Wednesday, 22nd
+                      December 2021
                     </span>
-                   
-                    <span
-                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
-                      <a href="/">Jesus power and victory ministry</a></span
-                    >
-                    <span
-                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
-                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
-            <div
-              class="img"
-              style="background-image: url(/asset/pray.jpg)"
-            ></div>
-            <div class="text p-4 px-md-5 d-flex align-items-center">
-              <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">christmas service</h1>
-               
-                <div class="meta">
-                  <p>
-                    <span
-                      ><i class="fa fa-calendar mr-2"></i> Saturday, 25th December 2021
-                    </span>
-                   
-                    <span
-                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
-                      <a href="/">Jesus power and victory ministry</a></span
-                    >
-                    <span
-                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
-                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
-            <div
-              class="img"
-              style="background-image: url(/asset/pray.jpg)"
-            ></div>
-            <div class="text p-4 px-md-5 d-flex align-items-center">
-              <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">crossover service</h1>
-               
-                <div class="meta">
-                  <p>
-                    <span
-                      ><i class="fa fa-calendar mr-2"></i> Friday, 31st December 2021
-                    </span>
-                   
-                    <span
-                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
-                      <a href="/">Jesus power and victory ministry</a></span
-                    >
-                    <span
-                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
-                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-12 event-wrap d-md-flex ftco-animate">
-            <div
-              class="img"
-              style="background-image: url(/asset/pray.jpg)"
-            ></div>
-            <div class="text p-4 px-md-5 d-flex align-items-center">
-              <div class="desc">
-                <h1 class="text-uppercase" style="font-weight: 600; color: #b00;">annual 21 days fasting and prayer</h1>
-                <div class="meta">
-                  <p>
-                    <span
-                      ><i class="fa fa-calendar mr-2"></i> Monday, 10th January - Sunday, 30th January 2022
-                    </span>
-                    <span
-                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
-                      <a href="/">Jesus power and victory ministry</a></span
-                    >
-                    <span
-                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
-                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-         
+                    <span
+                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
+                      <a href="/">Jesus power and victory ministry</a></span
+                    >
+                    <span
+                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
+                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+            <div
+              class="img"
+              style="background-image: url(/asset/pray.jpg)"
+            ></div>
+            <div class="text p-4 px-md-5 d-flex align-items-center">
+              <div class="desc">
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  christmas service
+                </h1>
+
+                <div class="meta">
+                  <p>
+                    <span
+                      ><i class="fa fa-calendar mr-2"></i> Saturday, 25th
+                      December 2021
+                    </span>
+
+                    <span
+                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
+                      <a href="/">Jesus power and victory ministry</a></span
+                    >
+                    <span
+                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
+                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+            <div
+              class="img"
+              style="background-image: url(/asset/pray.jpg)"
+            ></div>
+            <div class="text p-4 px-md-5 d-flex align-items-center">
+              <div class="desc">
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  crossover service
+                </h1>
+
+                <div class="meta">
+                  <p>
+                    <span
+                      ><i class="fa fa-calendar mr-2"></i> Friday, 31st December
+                      2021
+                    </span>
+
+                    <span
+                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
+                      <a href="/">Jesus power and victory ministry</a></span
+                    >
+                    <span
+                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
+                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 event-wrap d-md-flex ftco-animate">
+            <div
+              class="img"
+              style="background-image: url(/asset/pray.jpg)"
+            ></div>
+            <div class="text p-4 px-md-5 d-flex align-items-center">
+              <div class="desc">
+                <h1
+                  class="text-uppercase"
+                  style="font-weight: 600; color: #b00"
+                >
+                  annual 21 days fasting and prayer
+                </h1>
+                <div class="meta">
+                  <p>
+                    <span
+                      ><i class="fa fa-calendar mr-2"></i> Monday, 10th January
+                      - Sunday, 30th January 2022
+                    </span>
+                    <span
+                      ><i class="fa fa-map-marker mr-2 text-capitalize"></i>
+                      <a href="/">Jesus power and victory ministry</a></span
+                    >
+                    <span
+                      ><i class="fa fa-building mr-2"></i> 65 Sanni Balogun
+                      Street, New Okan Ogba, Abule Egba, Lagos, Nigeria</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
